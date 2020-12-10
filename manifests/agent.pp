@@ -217,7 +217,7 @@ class wazuh::agent (
   ## Windows
 
   $download_path                     = $wazuh::params_agent::download_path,
-  $download_url                      = $wazuh::params_agent::download_url,
+  $agent_msi_download_location       = $wazuh::params_agent::agent_msi_download_location,
 
   # Logging
   $logging_log_format                = $wazuh::params_agent::logging_log_format,
@@ -272,7 +272,7 @@ class wazuh::agent (
         owner              => 'Administrator',
         group              => 'Administrators',
         mode               => '0774',
-        source             => "http://packages.wazuh.com/3.x/windows/wazuh-agent-${agent_package_version}.msi",
+        source             => "${agent_msi_download_location}/wazuh-agent-${agent_package_version}.msi",
         source_permissions => ignore
       }
 
