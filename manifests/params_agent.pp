@@ -415,6 +415,7 @@ class wazuh::params_agent {
       $config_owner = 'Administrator'
       $config_group = 'Administrators'
       $download_path = 'C:\\Temp'
+      $download_url = "http://packages.wazuh.com/3.x/windows/wazuh-agent-${agent_package_version}.msi"
       $manage_firewall = false
 
       $keys_file = 'C:\\Program Files (x86)\\ossec-agent\\client.keys'
