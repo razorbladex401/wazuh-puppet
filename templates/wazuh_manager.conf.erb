@@ -20,6 +20,15 @@
   <%- end -%>
   </global>
 
+  <%- if @syslog_output -%>
+    <syslog_output>
+      <server><%= @syslog_output_server %></server>
+      <port><%= @syslog_output_port %></port>
+      <format><%= @syslog_output_format %></format>
+      <level><%= @syslog_output_level %></level>
+    </syslog_output>
+  <%- end -%>
+
   <alerts>
     <log_alert_level><%= @ossec_alert_level %></log_alert_level>
     <email_alert_level><%= @ossec_email_alert_level %></email_alert_level>
