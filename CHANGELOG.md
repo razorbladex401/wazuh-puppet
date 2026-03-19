@@ -13,7 +13,7 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
-- None
+- Fix bumper script early exit ([#1574](https://github.com/wazuh/wazuh-puppet/pull/1574/))
 
 ### Deleted
 
