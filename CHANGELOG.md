@@ -9,7 +9,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- None
+- The versions of the actions used in the workflows are updated. ([#1581](https://github.com/wazuh/wazuh-puppet/pull/1581))
 
 ### Fixed
 
